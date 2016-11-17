@@ -3,6 +3,8 @@ import org.bouncycastle.util.encoders.Hex;
 
 /*
 See: https://rosettacode.org/wiki/RIPEMD-160#Java
+
+see also: http://www.programcreek.com/java-api-examples/index.php?api=org.bouncycastle.crypto.digests.RIPEMD160Digest
 */
 public class Ripemd160 {
 
@@ -23,7 +25,6 @@ public class Ripemd160 {
 
         String digestStr = Hex.toHexString(o);
         System.out.println(digestStr); // 45147c708948188cead54a10b95899a36f47dc9c
-
     }
 
 }
