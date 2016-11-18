@@ -23,7 +23,11 @@ public class Ripemd160 {
         // Hex.encode(o, System.out);
         // System.out.println(); // 45147c708948188cead54a10b95899a36f47dc9c
 
-        String digestStr = Hex.toHexString(o);
+        // String digestStr = Hex.toHexString(o);
+        org.apache.commons.io.output.ByteArrayOutputStream byteArrayOutputStream =
+                new org.apache.commons.io.output.ByteArrayOutputStream();
+        Hex.encode(o, byteArrayOutputStream);
+        String digestStr = byteArrayOutputStream.toString("UTF8");
         System.out.println(digestStr); // 45147c708948188cead54a10b95899a36f47dc9c
     }
 

@@ -16,14 +16,30 @@
 
     <!-- Compile/runtime dependencies -->
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.55</version>
+            <!--<version>1.55</version>-->
+            <version>1.47</version>
         </dependency>
 
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcpg-jdk15on -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk15on</artifactId>
+            <!--<version>1.55</version>-->
+            <version>1.47</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        
+    </dependencies>
 
 </project>
